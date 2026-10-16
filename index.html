@@ -44,6 +44,6 @@ section{padding:68px 0}.center{text-align:center}.sub{max-width:700px;margin:0 a
 </main><footer><div class="wrap">© <span id="year"></span> Dr. Natali · Эстетическая косметология<p>Информация на сайте не заменяет очную консультацию специалиста. Возможность проведения процедур определяется индивидуально.</p></div></footer>
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
-const WHATSAPP_NUMBER="770789822052";
+const WHATSAPP_NUMBER="77789822052";
 document.getElementById('leadForm').addEventListener('submit',function(e){e.preventDefault();if(WHATSAPP_NUMBER==="REPLACE_WITH_NUMBER"){alert("Это черновик. Перед отправкой заявки нужно подключить номер WhatsApp.");return;}const d=new FormData(this);const msg=`Здравствуйте! Хочу записаться на консультацию.%0AИмя: ${encodeURIComponent(d.get('name'))}%0AТелефон: ${encodeURIComponent(d.get('phone'))}%0AГород: ${encodeURIComponent(d.get('city'))}%0AУслуга: ${encodeURIComponent(d.get('service'))}`;window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`,'_blank');});
 </script></body></html>
